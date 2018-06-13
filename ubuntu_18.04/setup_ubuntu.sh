@@ -12,7 +12,7 @@ localedef -i zh_CN -f UTF-8 zh_CN.UTF-8
 
 echo 'root:123456' |chpasswd
 
-sed -ri 's/^PermitRootLogin\s+.*/PermitRootLogin yes/' /etc/ssh/sshd_config
+sed -ri 's/^#+PermitRootLogin\s+.*/PermitRootLogin yes/' /etc/ssh/sshd_config
 sed -ri 's/UsePAM yes/#UsePAM yes/g' /etc/ssh/sshd_config
 
 /usr/bin/echo_supervisord_conf > /etc/supervisord.conf
