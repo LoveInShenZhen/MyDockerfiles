@@ -2,6 +2,7 @@ FROM       mcr.microsoft.com/java/jdk:8u212-zulu-ubuntu
 MAINTAINER KK <dragonsunmoon@163.com>
 
 COPY setup_ubuntu.sh /usr/local/bin
+COPY setup_zsh.sh /usr/local/bin
 COPY sources.list /etc/apt/sources.list
 
 RUN /usr/local/bin/setup_ubuntu.sh
