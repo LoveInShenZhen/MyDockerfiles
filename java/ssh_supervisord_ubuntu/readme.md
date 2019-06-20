@@ -26,6 +26,8 @@ docker_test
     │   ├── apache-zookeeper-3.5.5-bin
     │   │   ├── bin
     │   │   ├── conf
+    │   │   ├── 其他略...
+    │   │
     │   └── api_server
     │       ├── api_server.zip
     │       ├── api_server_20190620
@@ -42,6 +44,7 @@ docker_test
     │       │   └── lib
     │       │       ├── api_server.jar
     │       │       ├── 其他略...
+    │       │       
     │       ├── current -> api_server_20190620/
     │       └── logs
     │           └── application.log
