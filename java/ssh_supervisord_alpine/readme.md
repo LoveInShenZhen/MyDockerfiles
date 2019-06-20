@@ -1,6 +1,6 @@
 ### 构建命令
 ```bash
-docker build -t jdk8_ssh_supervisord:latest .
+docker build -t jdk8_ssh_supervisord:alpine .
 ```
 
 ### image 使用示例
