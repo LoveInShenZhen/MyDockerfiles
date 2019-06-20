@@ -54,12 +54,15 @@ docker_test
 ```
 
 #### supervisor 配置
-apps.conf 
+* 配置文件: apps.conf 
+* 注意: 通过设置环境变量 **JAVA_OPTS** 来设置JVM的参数
 ```
 [program:api_server]
 command=/deploy/api_server/current/bin/api_server
 directory=/deploy/api_server
+environment=JAVA_OPTS="-Xms256m -Xmx2048m"
 priority=999
+autorestart=false
 
 [program:zookeeper]
 command=/deploy/apache-zookeeper-3.5.5-bin/bin/zkServer.sh start-foreground
