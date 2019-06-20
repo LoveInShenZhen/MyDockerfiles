@@ -18,6 +18,7 @@ docker run --name docker_1 --hostname docker_1 -v /Users/kk/work/tmp/demo/docker
 * /Users/kk/work/tmp/demo/docker_test
     * 这个目录是Docker宿主机上用于保存不同容器映射目录的
     * **docker_1** 为容器名称
+    * **current** 为指向当前版本应用的目录
 
 ```
 docker_test
