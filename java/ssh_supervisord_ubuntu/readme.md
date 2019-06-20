@@ -64,4 +64,6 @@ priority=999
 [program:zookeeper]
 command=/deploy/apache-zookeeper-3.5.5-bin/bin/zkServer.sh start-foreground
 priority=100
+autorestart=true
+
 ```
