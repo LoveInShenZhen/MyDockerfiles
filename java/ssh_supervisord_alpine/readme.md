@@ -5,7 +5,7 @@ docker build -t jdk8_ssh_supervisord:alpine .
 
 ### image 使用示例
 ```bash
-docker run --name api_server --hostname api_server -v /Users/kk/work/tmp/demo/docker_test:/work -v /Users/kk/work/tmp/demo/docker_test/conf.d:/etc/supervisor/conf.d -p 10001:22 -p 9000:9000 -d jdk8_ssh_supervisord:latest
+docker run --name docker_2 --hostname docker_2 --net=kk-dev -v /Users/kk/work/tmp/demo/docker_test/docker_1/deploy:/deploy -v /Users/kk/work/tmp/demo/docker_test/docker_1/supervisor_conf.d:/etc/supervisor/conf.d -p 10002:22 -p 9000:9000 -d jdk8_ssh_supervisord:alpine
 
 ```
 
