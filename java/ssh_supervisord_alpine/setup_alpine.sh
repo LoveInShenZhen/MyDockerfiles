@@ -14,7 +14,7 @@ rm -rf /var/cache/apk/* /tmp/*
 mkdir -p /root/.ssh
 ssh-keygen -A
 
-pip3 install supervisor
+pip3 install -i https://pypi.tuna.tsinghua.edu.cn/simple supervisor
 mkdir -p /etc/supervisor/conf.d
 mkdir -p /etc/supervisor/builtin_conf
 
