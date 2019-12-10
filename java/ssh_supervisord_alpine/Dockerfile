@@ -1,5 +1,4 @@
-FROM mcr.microsoft.com/java/jdk:8u212-zulu-alpine
-MAINTAINER KK <dragonsunmoon@163.com>
+FROM mcr.microsoft.com/java/jdk:8u232-zulu-alpine
 
 COPY setup_alpine.sh /usr/local/bin
 COPY setup_zsh.sh /usr/local/bin

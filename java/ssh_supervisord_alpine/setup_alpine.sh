@@ -1,9 +1,9 @@
 #!/bin/sh
 
-ROOT_PASSWORD='1qaz@WSX'
+ROOT_PASSWORD='loveinshenzhen'
 
 sed -i 's/dl-cdn.alpinelinux.org/mirrors.ustc.edu.cn/g' /etc/apk/repositories
-apk update && apk upgrade && apk add openssh unzip python3 bash
+apk update && apk upgrade && apk add openssh unzip python3 bash rsync
 
 sed -i s/#PermitRootLogin.*/PermitRootLogin\ yes/ /etc/ssh/sshd_config
 
