@@ -26,3 +26,8 @@ echo 'files = /etc/supervisor/conf.d/*.conf /etc/supervisor/builtin_conf/*.conf'
 
 echo '[program:sshd]' >> /etc/supervisor/builtin_conf/sshd.conf
 echo 'command=/usr/sbin/sshd -D' >> /etc/supervisor/builtin_conf/sshd.conf
+
+echo '199.232.68.133 raw.githubusercontent.com
+199.232.68.133 user-images.githubusercontent.com
+199.232.68.133 avatars2.githubusercontent.com
+199.232.68.133 avatars1.githubusercontent.com' > /etc/hosts
